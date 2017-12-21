@@ -1,0 +1,10 @@
+services:
+  nginx:
+    image: nginx
+    builds: .
+    volumes:
+      - ./data:/data
+      - ./etc/nginx:/etc/nginx
+    ports:
+      - '80:80'
+      
