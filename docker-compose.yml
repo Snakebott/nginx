@@ -1,7 +1,7 @@
 version: '2'
 services:
   nginx:
-    image: nginx
+    image: snakebot/nginx:latest
     volumes:
       - ./data:/data
       - ./etc/nginx:/etc/nginx
