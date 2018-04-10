@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   nginx:
     image: snakebot/nginx:latest
@@ -7,4 +7,5 @@ services:
       - ./etc/nginx:/etc/nginx
     ports:
       - '80:80'
+      - '443:443'
       
